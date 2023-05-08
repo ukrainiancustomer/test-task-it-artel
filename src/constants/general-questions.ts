@@ -187,10 +187,10 @@ export const GENERAL_Q5_SOURCE_CODE_HTML = `
 
 export const GENERAL_Q5_SOLUTION_JS = `
   root.addEventListener("click", (event) => {
-    if (event.target.id) {
-      console.log(event.target.id);
-    } else {
-      console.log("Targeted element has no ID.");
+    const clickedElement = event.target;
+
+    if (clickedElement.nodeName === "DIV" && clickedElement !== root) {
+      console.log(clickedElement.id);
     }
   });
 
