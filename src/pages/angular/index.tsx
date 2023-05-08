@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { NextPage } from "next";
-import { PageTitle } from "@/components/PageTitle/PageTitle.component";
 import {
   ANGULAR_05_SOURCE_CODE,
   ANGULAR_06_SOURCE_CODE,
@@ -9,7 +8,7 @@ import {
   ANGULAR_Q3_SOURCE_CODES,
   ANGULAR_Q4_SOURCE_CODE,
 } from "@/constants";
-import { AccordionItem, Code } from "@/components";
+import { AccordionItem, Code, PageTitle } from "@/components";
 import {
   Accordion,
   ListItem,
