@@ -4,7 +4,7 @@ import { HStack, Image, Text } from "@chakra-ui/react";
 
 export const Logo: FC = (): JSX.Element => {
   return (
-    <HStack>
+    <HStack display={{ base: "none", md: "flex" }}>
       <Link href="/">
         <Image
           src="https://it-artel.ua/wp-content/themes/it-artel/images/logos.svg"

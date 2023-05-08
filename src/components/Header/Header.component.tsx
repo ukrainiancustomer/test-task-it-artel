@@ -15,7 +15,12 @@ export const Header: FC<IHeader> = (): JSX.Element => {
       boxShadow="0px 1px 5px 0px rgba(0,0,0,0.75);"
       zIndex={99}
     >
-      <Container as={HStack} p={4} justifyContent="space-between" maxW="1200px">
+      <Container
+        as={HStack}
+        p={4}
+        justifyContent={{ base: "center", md: "space-between" }}
+        maxW="1200px"
+      >
         <Logo />
         <Navigation />
       </Container>
